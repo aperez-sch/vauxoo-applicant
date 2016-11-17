@@ -1,16 +1,18 @@
 """
-Your module documentation here
+Modulo para calcular suma de listado de numeros
 """
 
 
 class CalculatorClass(object):
     """
-    Your class documentation here
+    clase que calcula suma de lista de numeros
     """
 
-    def sum(self, num_list):
+    def sum(self, var1, var2, *varn):
         """
-        Your method documentation here
+        metodo que calcula la suma de una lista de numeros
         """
-        # your sum code here
-        return "not implement yet"  # Remove this dummy line
+        suma = var1 + var2
+        for valor in varn:
+            suma = suma + valor
+        return suma  # retorna la sumatoria de la lista
